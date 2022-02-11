@@ -103,10 +103,10 @@ header {
     justify-content: center;
     cursor: pointer;
     color: #fff;
-    background: #000000;
+    background: #000000 ;
     position: relative;
     z-index: 1;
-    border-radius: 6px;
+    border-radius: 6px ;
     cursor: pointer;
     transition: opacity 400ms, transform 400ms;
 }
