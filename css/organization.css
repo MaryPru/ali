@@ -1,0 +1,158 @@
+.organization {
+    width: 100%;
+    background: #F5F5F5;
+    overflow: hidden;
+}
+
+.organization-container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4.375rem 3.75rem 0 3.75rem;
+}
+
+.organization-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.6875rem;
+}
+
+.organization-text {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #000000;
+
+}
+
+.org-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 25.4375rem;
+    position: absolute;
+}
+
+.text-one {
+    left: -2%;
+    bottom: 32%;
+    text-align: end;
+}
+
+.text-two {
+    left: -1%;
+    top: 17%;
+    text-align: end;
+}
+
+.text-three {
+    right: 7%;
+    top: 0px;
+}
+
+.text-four {
+    right: -5%;
+    bottom: 44%;
+}
+
+.one,
+.two {
+    margin-left: 20px;
+}
+
+
+@media (max-width:1200px) {
+    .org-item {
+        max-width: 19.4375rem;
+    }
+
+    .text-one {
+        left: 5%;
+    }
+
+    .text-two {
+        left: 5%;
+    }
+
+    .text-three {
+        right: 14%;
+    }
+
+    .text-four {
+        right: 1%;
+    }
+}
+
+@media (max-width:1100px) {
+    .organization-body {
+        transform: scale(0.8);
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1000px) {
+    .organization-img {
+        transform: scale(0.88);
+    }
+
+    .text-four {
+        right: -7%;
+    }
+
+    .text-two {
+        left: 1%;
+    }
+
+    .text-one {
+        left: 0%;
+    }
+}
+
+@media (max-width:900px) {
+    .text-four {
+        right: -4%;
+        bottom: 26%;
+    }
+
+    .text-three {
+        right: 4%;
+        top: 13%;
+    }
+}
+
+@media (max-width:730px) {
+    .organization-img {
+        transform: scale(0.6);
+    }
+
+    .step-number {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width:680px) {
+    .organization-img {
+        width: 0;
+    }
+
+    .org-item {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .one,
+    .two {
+        order: 1;
+        margin-left: 0;
+    }
+
+    .organization-text {
+        order: 2;
+        text-align: start;
+    }
+}

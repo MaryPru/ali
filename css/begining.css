@@ -1,0 +1,139 @@
+.begining {
+    width: 100%;
+    background: #651FFF;
+    padding: 3.0625rem 0 1.25rem;
+}
+
+.begining-container {
+    max-width: 1162px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.begining__steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.75rem 0;
+    margin-left: 8px;
+}
+
+.begining-step {
+    display: flex;
+    align-items: center;
+}
+
+.begining-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    display: flex;
+    align-items: center;
+    color: #FEFEFE;
+    padding-right: 2.875rem;
+    word-break: unset;
+}
+
+.begining__arrow {
+    margin-right: 1.875rem;
+}
+
+
+.step-number:hover {
+    animation: 3s zoom-in-zoom-out infinite;
+}
+
+.begining-step:nth-child(1) .step::after {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+}
+
+.begining-step:nth-child(2) .step::after {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+
+.begining-step:nth-child(3) .step::after {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+
+.begining-step:nth-child(4) .step::after {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 3.5s;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:1200px) {
+    .begining-container {
+        width: 90%;
+    }
+
+    .begining-text {
+        padding-right: 0;
+    }
+}
+
+@media (max-width:1000px) {
+    .begining__arrow {
+        display: none;
+    }
+
+    .begining-step {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width:670px) {
+    .begining__steps {
+        flex-direction: column;
+        padding: 0.75rem 0;
+    }
+
+    .begining-step {
+        align-self: flex-start;
+        max-width: 200px;
+    }
+
+    .begining-step:nth-child(1),
+    .begining-step:nth-child(4) {
+        margin-left: 2px;
+    }
+}

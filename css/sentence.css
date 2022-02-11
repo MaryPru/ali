@@ -1,0 +1,66 @@
+.sentence {
+    background: url(../img//sentence/background.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sentence-container {
+    max-width: 820px;
+    width: 100%;
+    padding: 70px 0 80px 50px;
+    margin-left: 326px;
+}
+
+.sentence__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-top: 4.8125rem;
+}
+
+.sentence-card {
+    background: white;
+    max-width: 23.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 7.5rem;
+    padding: 0 29px;
+    margin-bottom: 47px;
+}
+
+.sentence-card-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #000000;
+}
+
+.sentence-card-img {
+    margin-right: 1.25rem;
+    font-size: 2.4375rem;
+    color: #651FFF;
+    transition: transform .2s ease-in-out
+}
+
+.sentence-card-img:hover {
+    transform: scale(1.5);
+}
+
+.sentence__btn {
+    width: 19rem;
+}
+
+@media (max-width:1300px) {
+    .sentence-container {
+        margin-left: 0;
+    }
+
+    .sentence__cards {
+        padding-right: 40px;
+    }
+}
